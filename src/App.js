@@ -27,7 +27,7 @@ handleOnChange = e => this.setState({ input: e.target.value })
 handleOnClick = () => this.setState({ num: this.state.input, passwordGenerated: true  })
 
   render(){
-  if (this.state.passwordGenerated) return <div><h2>{this.passwordGenerator(parseInt(this.state.num))}</h2></div>
+  if (this.state.passwordGenerated) return <div className="App"><h2>{this.passwordGenerator(parseInt(this.state.num))}</h2></div>
     return (
   <div className="App">
     <h3>How Long Does your Password Need to be?</h3>
