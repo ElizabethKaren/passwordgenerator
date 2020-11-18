@@ -48,7 +48,7 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
     return (
   <div className="App">
     <br></br>
-    <h3 id='text'>Password Length?</h3>
+    <h2 id='text'>Password Length?</h2>
     <br></br>
     <div className='ui input'>
       <input id='text' placeholder='12 digits...' value={this.state.input} onChange={this.handleOnChange}></input>
