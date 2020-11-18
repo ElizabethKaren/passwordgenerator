@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  background: dodgerblue;
+    sans-serif; */
+  font-family: 'Abril Fatface', cursive;
+  background:  rgb(95, 144, 192);
 }
 
 :root{
-  background-color: dodgerblue;
+  background-color: rgb(95, 144, 192);
+  font-family: 'Abril Fatface', cursive;
 }
 
 

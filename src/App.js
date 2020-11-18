@@ -40,22 +40,22 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
     return (
     <div className="App">
       <br></br>
-      <h2>{this.passwordGenerator(parseInt(this.state.num))}</h2>
+      <h2 id='text'>{this.passwordGenerator(parseInt(this.state.num))}</h2>
       <br></br>
-      <button className='ui button' onClick={this.backToNormal}>Another Password</button>
+      <button id='button' className='ui button' onClick={this.backToNormal}>Another Password</button>
     </div>
     )
     return (
   <div className="App">
     <br></br>
-    <h3>How Long Does your Password Need to be?</h3>
+    <h3 id='text'>Password Length?</h3>
     <br></br>
     <div className='ui input'>
-      <input placeholder='12 digits...' value={this.state.input} onChange={this.handleOnChange}></input>
+      <input id='text' placeholder='12 digits...' value={this.state.input} onChange={this.handleOnChange}></input>
     </div>
     <br></br>
     <br></br>
-    <button className='ui button' onClick={this.handleOnClick}>Give Me A Password</button>
+    <button id='button' className='ui button' onClick={this.handleOnClick}>Give Me A Password</button>
   </div>
 )
   }
