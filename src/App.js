@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react'
 
@@ -35,13 +34,18 @@ handleOnClick = () => {
 }
 
   render(){
-  if (this.state.passwordGenerated) return <div className="App"><h2>{this.passwordGenerator(parseInt(this.state.num))}</h2></div>
+  if (this.state.passwordGenerated) return <div className="App"><br></br><h2>{this.passwordGenerator(parseInt(this.state.num))}</h2></div>
     return (
   <div className="App">
-    <h3>How Long Does your Password Need to be?</h3>
-    <input placeholder='Numbers..' value={this.state.input} onChange={this.handleOnChange}></input>
     <br></br>
-    <button onClick={this.handleOnClick}>Submit</button>
+    <h3>How Long Does your Password Need to be?</h3>
+    <br></br>
+    <div className='ui input'>
+      <input placeholder='Numbers..' value={this.state.input} onChange={this.handleOnChange}></input>
+    </div>
+    <br></br>
+    <br></br>
+    <button className='ui button' onClick={this.handleOnClick}>Submit</button>
     
   </div>
 )
