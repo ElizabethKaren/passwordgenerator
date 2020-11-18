@@ -24,7 +24,15 @@ class App extends Component {
 
 handleOnChange = e => this.setState({ input: e.target.value })
 
-handleOnClick = () => this.setState({ num: this.state.input, passwordGenerated: true  })
+handleOnClick = () => {
+  let newState = ''
+  if (this.state.input === ''){
+    newState = { passwordGenerated: true }
+  } else {
+    newState = { num: this.state.input, input: '', passwordGenerated: true }
+  }
+  this.setState( newState )
+}
 
   render(){
   if (this.state.passwordGenerated) return <div className="App"><h2>{this.passwordGenerator(parseInt(this.state.num))}</h2></div>
