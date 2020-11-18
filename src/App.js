@@ -40,7 +40,7 @@ handleOnClick = () => {
     <h3>How Long Does your Password Need to be?</h3>
     <br></br>
     <div className='ui input'>
-      <input placeholder='Numbers..' value={this.state.input} onChange={this.handleOnChange}></input>
+      <input placeholder='Number...' value={this.state.input} onChange={this.handleOnChange}></input>
     </div>
     <br></br>
     <br></br>
