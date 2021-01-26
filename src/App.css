@@ -1,11 +1,38 @@
 .App {
   text-align: center;
+  font-family: 'VT323', monospace;
+  color: #F2E9E4;
+  font-size: large;
+  background-image: url('https://www.pandasecurity.com/en/mediacenter/src/uploads/2016/03/pandasecurity-Who-are-the-most-famous-hackers-in-history.jpg');
+  height: 100vh;
+  overflow: hidden;
+}
+.passWord{
+  font-family: 'VT323', monospace;
+}
+#text{
   font-family: Arial, Helvetica, sans-serif;
 }
 #button{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'VT323', monospace;
 }
-
-#text{
-  font-family: Arial, Helvetica, sans-serif;
+input{
+  background-color: #F2E9E4;
+  color: #283618;
+  border-radius: 14px;
+  padding: 4px;
+}
+button{
+  font-family: 'VT323', monospace;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: none;
+  border: none;
+  color: #F2E9E4;
+  padding: 10px;
+}
+button:hover{
+  background-color: #22223B;
+  border-radius: 9px;
+  padding: 10px;
 }

@@ -6,7 +6,7 @@ import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <div style={{ backgroundColor: "dodgerblue", height: '100vh' }}>
+    <div style={{ backgroundColor: '#4A4E69', height: '100vh' }}>
     <App />
     </div>
   </React.StrictMode>,
