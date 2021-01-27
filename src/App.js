@@ -54,6 +54,8 @@ handleOnClick = () => {
   this.setState( newState )
 }
 
+lucky = () => this.setState({ passwordGenerated: true })
+
 newPass = () => {
   if (this.state.input === ''){
     alert ('Please Enter Word or Phrase')
@@ -77,7 +79,7 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
         <h1>{this.passwordGenerator(parseInt(this.state.num))}</h1>
       </div>
       <br></br>
-      <button id='button' onClick={this.handleOnClick}>Another Password</button>
+      <button id='button' onClick={this.lucky}>Another Password</button>
     </div>
     )
     if (this.state.passWordGumble)
@@ -102,8 +104,9 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
       <input id='text' placeholder='Number or Phrase' onKeyDown={this.handleKeyPress} value={this.state.input} onChange={this.handleOnChange}></input>
     </div>
     <br></br>
+    <button id='button' onClick={this.lucky}>Feeling Lucky</button>
     <button id='button' onClick={this.handleOnClick}>Password A By Length</button>&nbsp;
-    <button id='button' onClick={this.newPass}>Give Me A Password</button>
+    <button id='button' onClick={this.newPass}>Give Me A Password</button>&nbsp;
   </div>
 )
   }
