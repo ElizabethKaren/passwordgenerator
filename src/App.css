@@ -17,13 +17,10 @@
   font-family: 'VT323', monospace;
 }
 #x{
-  margin-right: 50px;
-  margin-left: 226px;
-  width: 14px;
+  width: 17px;
+  margin-left: 30%;
 }
 #x:hover{
-  margin-right: 50px;
-  margin-left: 226px;
   background-color: #22223B;
 }
 input{
