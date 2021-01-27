@@ -22,6 +22,13 @@ class App extends Component {
 
 handleOnChange = e => this.setState({ input: e.target.value })
 
+handleKeyPress = e => {
+  console.dir(e.code)
+  if (e.code === 'Enter'){
+    this.handleOnClick()
+  }
+}
+
 handleOnClick = () => {
   let newState = ''
   if (this.state.input === ''){
@@ -55,7 +62,7 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
     <h1 className='passWord'>Password Length?</h1>
     <br></br>
     <div>
-      <input id='text' placeholder='12 digits...' value={this.state.input} onChange={this.handleOnChange}></input>
+      <input id='text' placeholder='12 digits...' onKeyDown={this.handleKeyPress} value={this.state.input} onChange={this.handleOnChange}></input>
     </div>
     <br></br>
     <button id='button' onClick={this.handleOnClick}>Give Me A Password</button>
