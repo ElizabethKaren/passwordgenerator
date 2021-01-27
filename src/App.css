@@ -24,6 +24,7 @@
   background-color: #22223B;
 }
 input{
+  width: auto;
   background-color: #F2E9E4;
   color: #283618;
   border-radius: 14px;
