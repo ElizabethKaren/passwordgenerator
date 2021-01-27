@@ -104,9 +104,9 @@ backToNormal = () => this.setState({ num: 12, input: '', passwordGenerated: fals
       <input id='text' placeholder='Number or Phrase' onKeyDown={this.handleKeyPress} value={this.state.input} onChange={this.handleOnChange}></input>
     </div>
     <br></br>
-    <button id='button' onClick={this.lucky}>Feeling Lucky</button>
+    <button id='button' onClick={this.lucky}>Feeling Lucky</button>&nbsp;
     <button id='button' onClick={this.handleOnClick}>Password A By Length</button>&nbsp;
-    <button id='button' onClick={this.newPass}>Give Me A Password</button>&nbsp;
+    <button id='button' onClick={this.newPass}>Give Me A Password</button>
   </div>
 )
   }
